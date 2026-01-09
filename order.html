@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Morya Traders</title>
+    <meta name="description" content="Place your order for premium Kapoor. Fill out the form and submit via WhatsApp or email.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="logo">Morya Traders</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="trust.html">Trust</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="order-form">
+        <h1>Place Your Order</h1>
+        <form id="orderForm">
+            <label for="product">Product Name:</label>
+            <select id="product" name="product">
+                <option value="Mandi Grade Kapoor">Mandi Grade Kapoor</option>
+                <option value="Puja Kapoor">Puja Kapoor</option>
+                <option value="Medical Kapoor">Medical Kapoor</option>
+            </select>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+            <label for="address">Full Address:</label>
+            <textarea id="address" name="address" required></textarea>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            <button type="submit" class="btn">Submit Order</button>
+        </form>
+        <div id="confirmation" style="display:none;">Thank you! Your order has been submitted.</div>
+    </section>
+
+    <footer>
+        <p>Contact: Mobile: 8767231315 | Email: help.moryatraders@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
