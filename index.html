@@ -3,141 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morya Essentials - Pure by Faith | Premium Spiritual Kapoor</title>
-    <meta name="description" content="Discover Morya Essentials, offering pure Kapoor sourced from sacred lands. Elevate your spiritual rituals with faith-based purity and premium quality.">
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant:wght@400;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --primary-color: #8B4513;
-            --bg-color: #FFFFFF;
-        }
-
-        body {
-            font-family: 'Libre Baskerville', serif;
-            background-color: var(--bg-color);
-            color: var(--primary-color);
-            margin: 0;
-            padding-top: 10px; /* page cut issue fix */
-            line-height: 1.6;
-        }
-
-        header {
-    background-color: var(--bg-color);
-    padding: 10px 12px;   /* 👈 vertical space kam */
-    text-align: center;
-    border-bottom: 1px solid var(--primary-color);
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 10px;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--primary-color);
-            font-family: 'Cormorant', serif;
-            font-size: 18px;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #333;
-        }
-
-        .cta-button {
-            background-color: var(--primary-color);
-            color: var(--bg-color);
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-family: 'Cormorant', serif;
-            font-size: 18px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: #333;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            animation: fadeIn 2s ease-in;
-        }
-
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 4em;
-            margin: 0;
-        }
-
-        .hero p {
-            font-family: 'Cormorant', serif;
-            font-size: 2em;
-            margin: 10px 0 30px;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @media (max-width: 768px) {
-    .hero h1 { font-size: 2.5em; }
-    .hero p { font-size: 1.5em; }
-
-    nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 8px;
-        justify-content: center;
-    }
-
-    nav a {
-        font-size: 16px;
-    }
-
-    .cta-button {
-        padding: 8px 14px;
-        font-size: 16px;
-    }
-        }
+    <title>Morya Traders - Pure & Premium Kapoor</title>
+    <meta name="description" content="Morya Traders offers pure and premium Kapoor for Puja, Medical, and Wholesale use. Trusted supplier with quality assurance.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="logo">Morya Traders</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="trust.html">Trust</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">About</a>
-        <a href="trust.html">Trust</a>
-        <a href="contact.html">Contact</a>
-        <button class="cta-button" onclick="window.location.href='order.html'">Order Now</button>
-    </nav>
-</header>
+    <section class="slider">
+        <div class="slides">
+            <div class="slide active"><img src="images/slider1.jpg" alt="Kapoor for Puja"></div>
+            <div class="slide"><img src="images/slider2.jpg" alt="Medical Kapoor"></div>
+            <div class="slide"><img src="images/slider3.jpg" alt="Wholesale Kapoor"></div>
+        </div>
+        <div class="hero">
+            <h1>Pure & Premium Kapoor for Puja, Medical & Wholesale Use</h1>
+        </div>
+    </section>
 
-<section class="hero">
-    <h1>Morya Essentials</h1>
-    <p>Pure by Faith</p>
+    <section class="brand-intro">
+        <h2>Welcome to Morya Traders</h2>
+        <p>We are a leading supplier of high-quality Kapoor, sourced and processed with care for purity and efficacy. Serving retail and wholesale needs across India.</p>
+    </section>
 
-    <button class="cta-button" onclick="window.location.href='products.html'">
-        View Product
-    </button>
-</section>
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/mandi.jpg" alt="Mandi Grade Kapoor">
+                <h3>Mandi Grade Kapoor</h3>
+                <a href="order.html?product=Mandi Grade Kapoor" class="btn">Order Now</a>
+            </div>
+            <div class="product-card">
+                <img src="images/puja.jpg" alt="Puja Kapoor">
+                <h3>Puja Kapoor</h3>
+                <a href="order.html?product=Puja Kapoor" class="btn">Order Now</a>
+            </div>
+            <div class="product-card">
+                <img src="images/medical.jpg" alt="Medical Kapoor">
+                <h3>Medical Kapoor</h3>
+                <a href="order.html?product=Medical Kapoor" class="btn">Order Now</a>
+            </div>
+        </div>
+    </section>
 
-<script>
-    const colors = ['#8B4513', '#87CEEB', '#800080', '#FFA500', '#FFC0CB'];
-    const hour = new Date().getHours();
-    const colorIndex = hour % colors.length;
-    document.documentElement.style.setProperty('--primary-color', colors[colorIndex]);
-</script>
+    <section class="cta-banner">
+        <h2>Bulk & Retail Orders Welcome</h2>
+        <p>Contact us for customized pricing and fast delivery.</p>
+        <a href="order.html" class="btn">Place Order</a>
+    </section>
 
+    <footer>
+        <p>Contact: Mobile: 8767231315 | Email: help.moryatraders@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
